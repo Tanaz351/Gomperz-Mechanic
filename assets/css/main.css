@@ -2248,19 +2248,23 @@ input, select, textarea {
 
 			#main > section.one {
 				background-color: #0d4137;
-				background-image: url("../../images/banner.jpg");
+				background-image: url("../../images/bckround.jpg");
+				op
 			}
 
 			#main > section.two {
 				background-color: hsl(180, 86%, 20%);
+				color: white;
 			}
 
 			#main > section.three {
 				background-color: hsl(180, 55%, 60%);
+				color: white;
 			}
 
 			#main > section.four {
 				background-color: lab(59.59% -23.47 0.44);
+				color: white;
 			}
 
 /* Wide */
