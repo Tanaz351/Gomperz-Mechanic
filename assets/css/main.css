@@ -2283,6 +2283,9 @@ input, select, textarea {
 				background-color: lab(59.59% -23.47 0.44);
 				color: white;
 			}
+			.services-list {
+				text-align: left;
+			}
 
 /* Wide */
 
