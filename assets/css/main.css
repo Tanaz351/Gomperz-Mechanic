@@ -2247,13 +2247,29 @@ input, select, textarea {
 			}
 
 			#main > section.one {
-				background-color: #0d4137;
-				background-image: url("../../images/bckround.jpg");
-			}
+  background-color: #0d4137;
+  position: relative;
+}
+
+#main > section.one::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../../images/bckround.jpg");
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.45;
+  filter: grayscale(100%);
+  z-index: 0;
+}
+
+#main > section.one > * {
+  position: relative;
+  z-index: 1;
+}
 
 			#main > section.two {
 				background-color: hsl(180, 86%, 20%);
-				color: white;
 			}
 
 			#main > section.three {
