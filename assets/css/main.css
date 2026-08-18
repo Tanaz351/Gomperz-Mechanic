@@ -2272,6 +2272,7 @@ input, select, textarea {
 
 			#main > section.two {
 				background-color: hsl(180, 86%, 20%);
+				color: RGB(255, 255, 255, 0.9);
 			}
 
 			#main > section.three {
@@ -2283,9 +2284,15 @@ input, select, textarea {
 				background-color: lab(59.59% -23.47 0.44);
 				color: white;
 			}
-			.services-list {
-				text-align: left;
-			}
+			.services ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;   
+  padding-left: 1.5em;
+  max-width: 600px;
+  margin: 0 auto;            
+}
+	
 
 /* Wide */
 
