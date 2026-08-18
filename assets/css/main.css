@@ -2286,6 +2286,7 @@ input, select, textarea {
 				color: white;
 			}
 			.services ul {
+				text-align: left;
   display: flex;
   flex-direction: column;
   align-items: flex-start;   
@@ -2621,6 +2622,8 @@ input, select, textarea {
 				font-size: 1.5em;
 				letter-spacing: 0;
 				font-weight: 300;
+				color: RGB(255, 255, 255, 0.9);
+				text-align: left;
 			}
 
 			.container {
