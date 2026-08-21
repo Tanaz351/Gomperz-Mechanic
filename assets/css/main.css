@@ -40,6 +40,16 @@ ol, ul {
 blockquote, q {
 	quotes: none;
 }
+ul {
+  list-style: none;          /* remove default dots */
+  padding-left: 0;           /* optional: clean left padding */
+}
+
+li::before {
+  content: "🚗 ";            /* car emoji + space */
+  font-size: 0.9em;          /* make it a bit smaller if you want */
+  margin-right: 0.4em;       /* spacing between emoji and text */
+}
 
 	blockquote:before, blockquote:after, q:before, q:after {
 		content: '';
@@ -2063,6 +2073,7 @@ input, select, textarea {
 			-webkit-flex-grow: 1;
 			-ms-flex-grow: 1;
 			flex-grow: 1;
+			color: whitesmoke;
 		}
 
 		#header .bottom {
@@ -2079,7 +2090,7 @@ input, select, textarea {
 
 		#header .icons {
 			font-size: 0.8em;
-			text-align: center;
+			text-align: left;
 		}
 
 			#header .icons a {
@@ -2090,9 +2101,7 @@ input, select, textarea {
 				transition: color 0.35s ease-in-out;
 			}
 
-				#header .icons a:hover {
-					color: #fff;
-				}
+
 
 	#logo {
 		position: relative;
@@ -2136,7 +2145,6 @@ input, select, textarea {
 
 			#nav ul li a {
 				display: block;
-				padding: 0.5em 1.5em 0.5em 1.5em;
 				color: rgba(255, 255, 255, 0.5);
 				text-decoration: none;
 				outline: 0;
@@ -2165,8 +2173,8 @@ input, select, textarea {
 					}
 
 				#nav ul li a.active {
-					background: #19123a26;
-					box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
+					background: #160f3626;
+					box-shadow: inset 0 0 0.25em 0 rgba(6, 26, 39, 0.125);
 					color: #fff;
 				}
 
