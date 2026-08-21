@@ -82,6 +82,24 @@ li::before {
 .form-group button {
 	width: 100px;
 }
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row input {
+  flex: 1;
+  min-width: 0;
+}
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  form {
+    padding: 15px;
+  }
+}
 
 
 table {
