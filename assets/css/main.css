@@ -72,6 +72,17 @@ li::before {
 .img-container:hover img {
   transform: scale(1.05);   /* subtle zoom on hover */
 }
+.form-group {
+	display: flex;
+	gap: 10px;
+}
+.formgroup input{
+	flex: 1;
+}
+.form-group button {
+	width: 100px;
+}
+
 
 table {
 	border-collapse: collapse;
