@@ -41,20 +41,37 @@ blockquote, q {
 	quotes: none;
 }
 ul {
-  list-style: none;          /* remove default dots */
-  padding-left: 0;           /* optional: clean left padding */
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  position: relative;
+  padding-left: 1.6em;       /* space for the emoji */
 }
 
 li::before {
-  content: "🚗 ";            /* car emoji + space */
-  font-size: 0.9em;          /* make it a bit smaller if you want */
-  margin-right: 0.4em;       /* spacing between emoji and text */
+  content: "🚗";
+  position: absolute;
+  left: 0;
+  top: 0.1em;                /* fine-tune vertical position */
+  font-size: 0.85em;
 }
-
 	blockquote:before, blockquote:after, q:before, q:after {
 		content: '';
 		content: none;
 	}
+	.img-container img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.img-container:hover img {
+  transform: scale(1.05);   /* subtle zoom on hover */
+}
 
 table {
 	border-collapse: collapse;
